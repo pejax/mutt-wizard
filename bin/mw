@@ -96,7 +96,7 @@ set realname = \"$realname\"
 set from = \"$fulladdr\"
 set sendmail = \"msmtp -a $fulladdr\"
 alias me $realname <$fulladdr>
-set folder = \"$folder\"
+set folder = \"${folder}.lnk\"
 set header_cache = $cachedir/$fulladdr/headers
 set message_cachedir = $cachedir/$fulladdr/bodies
 set mbox_type = Maildir
