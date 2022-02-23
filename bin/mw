@@ -3,23 +3,14 @@
 prefix="/usr/local"
 muttshare="$prefix/share/mutt-wizard"
 
-maildir="~/.local/share}/mail"
-cachedir="~/.cache}/mutt-wizard"
-muttrc="~/.config}/mutt/muttrc"
-accdir="~/.config}/mutt/accounts"
-msmtprc="~/.config}/msmtp/config"
-msmtplog="~/.config}/msmtp/msmtp.log"
-mbsyncrc="~/.mbsyncrc}"
-mpoprc="~/.config}/mpop/config"
-
-#maildir="${XDG_DATA_HOME:-$HOME/.local/share}/mail"
-#cachedir="${XDG_CACHE_HOME:-$HOME/.cache}/mutt-wizard"
-#muttrc="${XDG_CONFIG_HOME:-$HOME/.config}/mutt/muttrc"
-#accdir="${XDG_CONFIG_HOME:-$HOME/.config}/mutt/accounts"
-#msmtprc="${XDG_CONFIG_HOME:-$HOME/.config}/msmtp/config"
-#msmtplog="${XDG_CONFIG_HOME:-$HOME/.config}/msmtp/msmtp.log"
-#mbsyncrc="${MBSYNCRC:-$HOME/.mbsyncrc}"
-#mpoprc="${XDG_CONFIG_HOME:-$HOME/.config}/mpop/config"
+maildir="${XDG_DATA_HOME:-$HOME/.local/share}/mail"
+cachedir="${XDG_CACHE_HOME:-$HOME/.cache}/mutt-wizard"
+muttrc="${XDG_CONFIG_HOME:-$HOME/.config}/mutt/muttrc"
+accdir="${XDG_CONFIG_HOME:-$HOME/.config}/mutt/accounts"
+msmtprc="${XDG_CONFIG_HOME:-$HOME/.config}/msmtp/config"
+msmtplog="${XDG_CONFIG_HOME:-$HOME/.config}/msmtp/msmtp.log"
+mbsyncrc="${MBSYNCRC:-$HOME/.mbsyncrc}"
+mpoprc="${XDG_CONFIG_HOME:-$HOME/.config}/mpop/config"
 
 alias mbsync='mbsync -c "$mbsyncrc"'
 
