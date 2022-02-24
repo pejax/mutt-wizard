@@ -3,7 +3,7 @@
 # Helps open a file with xdg-open from mutt in a external program without weird side effects.
 
 #tempdir="${XDG_CACHE_HOME:-$HOME/.cache}/mutt-wizard/files"
-tempdir=${RAMDISK}/mutt-wizard/files
+tempdir=${RAMDISK}/.mutt-wizard/files
 
 file="$tempdir/$(basename "$1")"
 [ "$(uname)" = "Darwin" ] && opener="open" || opener="setsid -f xdg-open"
